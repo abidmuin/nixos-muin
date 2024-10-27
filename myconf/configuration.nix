@@ -89,7 +89,7 @@
   };
 
   # Enable experimental Nix features
-  nix.extraOptions = " experimental-features = nix-command flakes ";
+  nix.settings.experimental-features =  [ "nix-command" "flakes" ];
 
   # Install firefox.
   programs.firefox.enable = true;
